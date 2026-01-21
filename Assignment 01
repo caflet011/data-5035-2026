@@ -1,0 +1,128 @@
+DATA ENGINEERING FOUNDATIONS – STUDY & SUCCESS GUIDE
+(Compiled from ChatGPT conversation)
+
+==================================================
+ROLE CONTEXT
+==================================================
+User background considered:
+- Product Owner experience
+- Potential transition to Research Assistant
+- Work with data warehouses and sensitive customer data
+
+==================================================
+HOW THIS CLASS HELPS YOUR WORK
+==================================================
+- Improves ability to evaluate data quality and fitness-for-purpose
+- Bridges business problems to data systems and analytics
+- Builds production-grade, reproducible data pipelines
+- Strengthens data governance, privacy awareness, and downstream consumption control
+- Develops feature engineering discipline and statistical rigor
+- Improves communication with technical and non-technical stakeholders
+
+==================================================
+FOCUS AREAS – PRODUCT OWNER PATH
+==================================================
+Tier 1 (Highest Priority):
+- Data profiling and data quality
+- Fitness-for-purpose evaluation
+- Data consumers and reverse ETL
+- Data quality, integrity, monitoring, observability
+
+Tier 2:
+- Relational modeling, joins, merging data
+- Feature engineering and aggregation choices
+
+Tier 3:
+- Orchestration concepts (Airflow, dagster)
+- Data lakes, formats, and storage tradeoffs
+
+==================================================
+FOCUS AREAS – RESEARCH ASSISTANT PATH
+==================================================
+Tier 1 (Highest Priority):
+- Data profiling and data quality
+- Feature engineering and statistical assumptions
+- Reproducibility and transformation transparency
+
+Tier 2:
+- Multi-source data integration
+- Data modeling and normalization
+
+Tier 3:
+- Monitoring and observability
+- Storage formats and performance considerations
+
+==================================================
+GENERAL TIPS TO DO WELL IN CLASS
+==================================================
+1. Treat every assignment as a mini production system
+2. Document decisions, not just code
+3. Take data profiling seriously
+4. Prioritize clarity over cleverness
+5. Be consistent with tools and pipeline structure
+6. Start midterm and final projects early
+7. Practice explaining your work out loud
+8. Use GitHub as a communication and narrative tool
+9. Maximize participation points
+10. Remember: Raw data is evidence, not truth
+
+==================================================
+ORGANIZED YOUTUBE LEARNING JOURNEY
+==================================================
+
+Phase 0 – Foundations:
+- What does a Data Engineer do?
+- Modern Data Stack explained
+- Analytics vs Data Engineering vs Data Science
+
+Phase 1 – Data Profiling & Quality:
+- Data profiling explained
+- Data quality dimensions
+- Exploratory Data Analysis in Python
+
+Phase 2 – Data Formats & Storage:
+- CSV vs JSON vs Parquet
+- Data lakes vs data warehouses
+- Delta Lake & Parquet basics
+
+Phase 3 – Web Data & APIs:
+- APIs for data engineers
+- REST APIs basics
+- Web data ingestion pipelines
+
+Phase 4 – Orchestration & Transformation:
+- Apache Airflow basics
+- DAGs and dependencies
+- dbt fundamentals
+
+Phase 5 – Data Modeling & Joins:
+- SQL joins explained visually
+- Database normalization
+- Star vs Snowflake schemas
+
+Phase 6 – Feature Engineering & Consumers:
+- Feature engineering concepts
+- Reverse ETL
+- How ML pipelines consume data
+
+Phase 7 – Monitoring & Observability:
+- Data observability concepts
+- Testing data pipelines
+- Common pipeline failure modes
+
+Phase 8 – Final Project Prep:
+- End-to-end data engineering project examples
+- Complete ELT pipeline walkthroughs
+
+==================================================
+WEEKLY VIEWING STRATEGY
+==================================================
+- 1 conceptual video before class
+- Tutorials during homework
+- 1 reflection video after submission
+(~2–3 hours per week total)
+
+==================================================
+CORE MENTAL MODEL
+==================================================
+Raw data is not truth — it is evidence with limitations.
