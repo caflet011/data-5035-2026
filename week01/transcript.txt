@@ -1,0 +1,616 @@
+Spring-2026-CAPS-CS-5035-01-Spring-2026-CAPS-CS-5035-01-Data-Engineering-Foundations-(CS-&-DS).pdf
+610 lines
+
+pdf
+
+Hey Claude, I added my class syllabus for context for you. I want you to act as if you are a recent graduate from WashU and this is one of the classes you have taken. With that, you are now a Product Owner and using this class to help your career. For this interview your name is going to be Bob Ross. You should show curiosity in my job, asking me questions about what I do or hope to do after
+completing this degree program, and then use your experience as a Product Owner for government accounting and a graduate from this program to help me understand how I can apply the material
+from this class. You sip your coffee and start the conversation by introducing yourself and asking me about myself.
+
+1:52 PM
+takes a sip of coffee and leans back with a warm smile
+
+Hey there! I'm Bob Ross - great to meet you. extends hand for a handshake
+
+I graduated from WashU's Data Engineering program a couple years back, and honestly, that course was one of the highlights for me. Now I'm working as a Product Owner in government accounting, which sounds like it might be a bit of a departure from data engineering, but trust me, they're more connected than you'd think.
+
+sets coffee down and leans in with genuine interest
+
+But enough about me for now - I want to hear about you! What drew you to this Data Engineering Foundations course? Are you coming from more of a technical background, or are you looking to pivot into something new? And I'm really curious - what are you hoping to do once you complete the program? Are you thinking data science, analytics, engineering roles, or maybe something else entirely?
+
+picks up coffee again and takes another sip, clearly ready to listen
+
+I find that everyone has such different paths and goals, and honestly, that's what makes these conversations so interesting. So tell me - what's your story?
+
+Hey Boss, so the reason I took this course is because I want to get my foot in the door for becoming an AI Product Owner. I'm not the greatest at coding but I was hoping that this class would help me get a good foundation for being an AI PO that has to work with different partners.
+
+1:53 PM
+nods enthusiastically and sets coffee down
+
+Oh man, that's actually perfect! And honestly? You don't need to be the greatest coder to be an effective AI Product Owner - I'm living proof of that. laughs
+
+What you DO need though, and this is where Data Engineering Foundations becomes absolutely critical, is the ability to speak the language. You need to understand what your data engineers are talking about when they mention things like data pipelines, data quality issues, or why they can't just "quickly grab that data" for your AI model.
+
+leans forward with more energy
+
+Here's the thing - in my role with government accounting, I work with partners across different agencies, vendors, and internal teams. And let me tell you, the number one thing that makes or breaks an AI initiative isn't the fancy algorithm or the latest LLM. It's the DATA. Every single time.
+
+So when you mentioned working with different partners as an AI PO, that really resonates with me. Can I ask - what kind of partners are you thinking about? Are we talking technical teams like data engineers and ML engineers, or more business stakeholders, or maybe external vendors? And do you have a specific industry or domain in mind for where you want to work?
+
+picks up coffee again
+
+I'm asking because the way you apply what you learn in this course is going to vary quite a bit depending on your answer!
+
+I was thinking partners such as my developers and maybe any third party applications I may partner with to help enhance what ever AI product I help create. What do you think about this?
+
+1:55 PM
+takes a thoughtful sip of coffee and nods
+
+Okay, yeah - developers and third-party applications. That's a really practical focus, and honestly, this course is going to give you some serious leverage in those relationships.
+
+sets coffee down and gestures as I talk
+
+Let me paint you a picture from my world. Just last quarter, we were evaluating a third-party AI vendor that promised to automate our invoice processing. Sounded great, right? But here's where my data engineering knowledge saved us from a nightmare - I knew to ask about their data ingestion formats, how they handled semi-structured data like our PDFs and XMLs, and what their data quality expectations were.
+
+The vendor kept saying "oh, we can handle any data format!" But when I started asking specifics - "Do you support Parquet? What about Avro? How do you handle schema evolution?" - they got real quiet real fast. Turns out their solution needed perfectly clean, structured CSVs. We would've had to build an entire transformation pipeline just to feed their system.
+
+leans back
+
+See, that's weeks 3 through 5 of your course right there - understanding different data formats and storage systems. That knowledge lets you have intelligent conversations with third-party vendors and not just take their marketing at face value.
+
+curious look
+
+But here's what I'm really curious about - when you say "developers," are you thinking about the ML/AI developers building the models, or more like the application developers who'll integrate the AI into products? Because the conversations you'll have with each are pretty different, and this course prepares you for both in different ways.
+
+That's a good question. Honestly when it comes to who I will work with I never thought to separate the two. For me I didn't consider which type of AI product owner I would be. I think since my experience is with an application that is integrating new tools into and new features. I want to work with the application developers. They'll likely have to modernize the applications I work with to properly ingest Artificial Intelligence.
+
+1:57 PM
+eyes light up and I lean forward excitedly
+
+Okay, NOW we're talking! This is actually a really smart direction, and honestly, I think you're going to find yourself in a sweet spot that not a lot of people occupy.
+
+takes a sip of coffee
+
+Here's why - most AI Product Owners come from one of two camps: either they're super technical ML folks who understand models but don't get product, or they're product people who treat AI like magic and can't bridge the gap with their technical teams. You're positioning yourself right in the middle, which is gold.
+
+So let me ask you this - when you're working with application developers to modernize and integrate AI features, one of the biggest challenges is going to be the data flow. Your existing application probably has data sitting in relational databases, right? Maybe some older systems, some APIs pulling from different sources?
+
+gestures animatedly
+
+This is where weeks 7 through 12 of your course become your bread and butter. Orchestrating data pipelines, understanding how to transform and merge data from multiple sources, feature engineering - these aren't just buzzwords. When your developers tell you "we need to build an ETL pipeline to prepare training data" or "we need to denormalize this for the AI service," you'll actually know what that means and why it matters.
+
+curious expression
+
+What kind of application are you working with now, if you don't mind me asking? Like, is it a legacy system, something cloud-based, customer-facing, internal tools? Because that context really shapes how you'll apply this stuff.
+
+I want to try and work with an app similar to yours. I want to work on a financials app that can help create records but also provide user insights.
+
+2:06 PM
+sits up straighter and grins
+
+Oh man, okay - now I'm REALLY excited to talk about this because you're basically describing my world! Financial applications with AI capabilities are honestly one of the best places to cut your teeth as an AI Product Owner, but they're also one of the most challenging. And here's why...
+
+leans in seriously
+
+Financial data is messy. Like, spectacularly messy. You've got transactions coming from multiple sources - bank feeds, manual entries, third-party integrations, legacy systems that are older than both of us combined. The data formats are all over the place, there are regulatory requirements about data quality and audit trails, and oh yeah - if your AI gives someone the wrong financial insight, that's not just annoying, that could be financially damaging or even illegal.
+
+takes a sip of coffee
+
+So when you talk about creating records AND providing user insights, you're actually talking about two very different data engineering challenges. Let me break this down...
+
+For creating records - that's your weeks 1-6 stuff. You need to understand data profiling, data quality, handling different formats. When your app ingests a bank statement CSV versus an invoice PDF versus an API call from QuickBooks, you need pipelines that can handle all of that.
+
+For user insights - that's your weeks 10-14. Feature engineering, aggregations, dealing with missing data. Because AI models don't just magically understand "show me my spending trends" - someone has to transform raw transaction data into meaningful features.
+
+curious look
+
+Here's what I want to know though - when you say "user insights," what are you picturing? Like, predictive stuff ("you're going to overspend this month"), descriptive stuff ("here's where your money went"), or prescriptive ("you should move money here")? Because each of those requires different data engineering approaches.
+
+Can you dive a bit deeper into week 10-14 for me and the idea of those user insights? I want to help people use the app to make smarter decisions and find better and more efficient ways to use the money they have. So predictive technology and prescription as well.
+
+2:09 PM
+sets coffee down and rubs hands together excitedly
+
+Okay, YES! This is where it gets really good. Predictive and prescriptive insights for financial decisions - that's honestly the holy grail of financial AI applications. Let me walk you through how weeks 10-14 directly apply to what you want to build.
+
+pulls out an imaginary notebook and starts gesturing
+
+Week 10 - Features and Aggregating Data
+
+So here's the thing - your raw data is just transactions, right? "Bob spent $4.50 at Starbucks on January 24th." That's not useful for prediction. You need to engineer FEATURES from that data.
+
+In my government accounting work, we do things like:
+
+Rolling 30-day spending averages by category
+Month-over-month variance calculations
+Velocity metrics - "how fast is this department burning through budget?"
+Seasonality indicators - "Q4 always spikes because of procurement cycles"
+For your app, you'd create features like "average grocery spend per week," "percentage of income going to discretionary vs. fixed expenses," "day-of-month when user typically runs low on funds." The AI doesn't predict based on raw transactions - it predicts based on these engineered features.
+
+leans back
+
+Week 11 - Data Consumers and Denormalization
+
+This week talks about preparing data for different consumers - analytics, data science, GenAI, etc. Here's where it gets interesting for you...
+
+Your normalized relational database is great for storing transaction data efficiently. But when your AI model needs to make a prediction about "will this user overdraft next week?", it doesn't want to join across 5 tables in real-time. You need to denormalize that data - basically flatten it into a format optimized for ML consumption.
+
+In my world, we create what we call "analytics-ready" tables. Instead of:
+
+Table 1: Transactions
+Table 2: Categories
+Table 3: Vendors
+Table 4: Budget allocations
+We create a denormalized view:
+
+One wide table with everything the model needs in one place
+picks up coffee
+
+Week 12 - Feature Engineering and Data Quality
+
+This is where the rubber meets the road. You're not just aggregating anymore - you're creating entirely NEW data points that don't exist in your source systems.
+
+For prescriptive insights like "you should move $200 to savings this month," you need features like:
+
+Predicted discretionary income (income minus fixed expenses)
+Historical savings success rate
+Upcoming known expenses (bills, subscriptions)
+Spending pattern anomalies
+And here's the critical part - data quality. If someone's income is miscategorized, or a recurring subscription isn't flagged correctly, your prescriptive advice could be disastrously wrong. Week 12 teaches you how to build quality checks into your pipelines.
+
+becomes more serious
+
+Week 13 - Monitoring and Observability
+
+This one doesn't get enough love, but it's CRUCIAL for AI products. Your predictive model might work great in development, but what happens when:
+
+User behavior changes (hello, pandemic spending patterns)
+A data source goes down
+Categories get misclassified at scale
+You need monitoring on your data pipelines AND your model performance. In government accounting, we have dashboards that track:
+
+Data freshness - is the data current?
+Data completeness - are we missing fields?
+Model drift - is the model still accurate?
+Feature distribution - are the patterns changing?
+For your financial app, you'd want alerts like "prediction accuracy dropped below 85%" or "30% of transactions are uncategorized this week."
+
+leans forward intensely
+
+Now here's where this all comes together for your specific use case. Let me give you a real scenario:
+
+Scenario: Predictive Cash Flow Management
+
+User wants to know: "Can I afford this $500 expense next week?"
+
+Behind the scenes, your data pipeline needs to:
+
+Aggregate historical income and expense patterns (Week 10)
+Engineer features like:
+Predicted income for next 7 days based on payroll patterns
+Predicted expenses based on recurring bills + historical discretionary spending
+Available credit and overdraft risk score
+Denormalize all this into a format your ML model can consume (Week 11)
+Quality check - are all the recurring bills accounted for? Any missing data? (Week 12)
+Monitor - is the model's confidence score high enough to show this prediction to the user? (Week 13)
+Then your AI returns: "Yes, but you'll have only $80 buffer. Consider moving your gym membership charge to next month."
+
+That's PRESCRIPTIVE. And it's only possible because of robust data engineering.
+
+sits back and picks up coffee
+
+Here's my question for you though - and this is where working with your application developers becomes critical - where does this data engineering happen? Is it:
+
+Inside your existing application database?
+In a separate data warehouse?
+Real-time processing vs. batch processing?
+Because when you're talking to your developers about modernizing the app to integrate AI, you need to understand whether you're building real-time feature pipelines (complex, expensive) or batch pipelines that run nightly (simpler, but less responsive).
+
+What's your gut tell you? Are users expecting instant AI insights when they open the app, or is overnight processing acceptable?
+
+I think it will be a mix. Which I am hoping this class would be able to tell me how that would look. When you took the course was that something you learned, or figured out?
+
+2:11 PM
+leans back and laughs, then takes a long sip of coffee
+
+Oh man, okay - so here's the honest truth. The class gives you the building blocks, but figuring out the "mix" part? That's something you learn through the projects and by asking the right questions during class.
+
+sets coffee down thoughtfully
+
+When I took the course, Professor Boal was really good about this. He didn't just teach us "here's how to build a batch pipeline" or "here's how to do real-time streaming" in isolation. The magic happened in weeks 7 and 13 - Orchestrating Data Pipelines and Monitoring and Observability.
+
+gestures animatedly
+
+Week 7 is where you learn about tools like Airflow, dagster, and how to actually SCHEDULE and COORDINATE different pipeline types. That's when it clicked for me - you don't have to choose one or the other. You can have:
+
+Batch pipelines that run nightly to calculate heavy feature engineering (like your 90-day spending trends, seasonality patterns, budget forecasts)
+Real-time pipelines that trigger on events (like when a user makes a transaction, immediately update their available balance and check for overdraft risk)
+Micro-batch processing that runs every 15 minutes or hourly for semi-urgent stuff
+The course teaches you the orchestration concepts, but here's what I actually figured out during the Midterm and Final Projects...
+
+leans forward
+
+The midterm in week 6-7 is where you evaluate data fitness for a business scenario. That's when I started thinking: "Okay, what data do I NEED in real-time versus what can wait?" Because real-time is expensive - computationally and in terms of complexity.
+
+The final project is where it really comes together. You're building a multi-source data pipeline with orchestration, and you have to make actual architectural decisions. That's when I mapped out:
+
+Real-time needs:
+
+Transaction posting
+Fraud detection
+Overdraft alerts
+Balance updates
+Batch/overnight processing:
+
+Monthly spending analysis
+Budget recommendations
+Trend predictions
+Historical comparisons
+Hybrid approach:
+
+Use batch to PRE-COMPUTE common insights
+Use real-time to UPDATE only what changed
+Cache everything you can
+picks up coffee again
+
+Here's what the class specifically teaches you about the hybrid approach:
+
+Week 3 (Data Formats) - You learn that some formats are better for real-time (JSON from APIs) and some are better for batch (Parquet files for analytical processing)
+
+Week 5 (Data Lakes) - This is huge. You learn about the "Lambda Architecture" concept - having both a batch layer and a speed layer that work together
+
+Week 7 (Orchestration) - You learn tools that can handle BOTH batch and streaming, and how to coordinate them
+
+Week 11 (Data Consumers) - Different consumers need different speeds. Your analytics dashboard can be batch-updated. Your "current balance" needs real-time.
+
+becomes more serious
+
+But here's what I really figured out, and this is something you should specifically ask Professor Boal about during office hours or in class discussions...
+
+The question isn't "batch or real-time?" The question is: "What's the business impact of latency for each feature?"
+
+For your financial app:
+
+"Can I afford this purchase?" → Needs near real-time (within minutes)
+"Show me my spending trends" → Batch is fine (overnight update)
+"You're about to overdraft" → Real-time critical
+"Here's a savings recommendation" → Batch is fine
+looks at you directly
+
+During the course, especially in weeks 7-8 when you're doing the midterm presentations, I'd recommend you ask questions like:
+
+"How do we decide when to use batch vs. streaming?"
+"What's the performance trade-off between real-time feature engineering and pre-computed features?"
+"How do tools like Databricks and Snowflake handle hybrid workloads?"
+Because Professor Boal has real-world experience, and the labs in weeks 7-13 specifically use tools like Databricks and Snowflake that are BUILT for hybrid processing.
+
+sits back
+
+The other thing - and this is something I learned from my final project partner who came from fintech - is that for financial apps, you often do what's called "near real-time" which is actually micro-batching every 5-15 minutes. It FEELS real-time to users, but it's way simpler to build and maintain than true streaming.
+
+curious look
+
+Here's what I'm wondering though - when you're working with your application developers on this, how much control do you think you'll have over the architecture decisions? Like, are you walking into an existing system where the architecture is already set, or is this more greenfield where you get to help design it?
+
+Because that changes how you should approach the course content. If it's existing systems, you need to focus more on understanding constraints. If it's greenfield, you get to think more architecturally.
+
+What's your situation looking like?
+
+What does greenfield mean? For me I am currently working with an application that already exist. How do you think about constraints and what weeks of the course are the best for really breaking down and understanding how my applications constraints look?
+
+2:14 PM
+smiles and nods
+
+Oh good question! Sorry, I slipped into jargon there - let me explain.
+
+Greenfield = Building something brand new from scratch, like building on an empty field. No existing systems to work around.
+
+Brownfield = Working with existing systems that are already running. You've got legacy code, existing databases, users depending on it, technical debt - the whole nine yards.
+
+You're in a brownfield situation, which honestly is WAY more common and in some ways more valuable experience.
+
+leans forward with intensity
+
+Okay, so constraints. When I'm thinking about constraints in existing applications, I'm asking questions like:
+
+Data Constraints:
+
+What databases are we already using? (PostgreSQL? SQL Server? Something ancient?)
+What's the data volume? (Thousands of records? Millions? Billions?)
+How is data currently structured? (Normalized? Denormalized? A mess?)
+What's the data quality like? (Clean? Missing values everywhere?)
+Technical Constraints:
+
+What's our infrastructure? (On-premise servers? Cloud? Hybrid?)
+What are our performance requirements? (How fast do queries need to run?)
+What's our budget for new tools or infrastructure?
+What programming languages and frameworks are already in use?
+Organizational Constraints:
+
+Who owns the existing data? (Different teams? Different departments?)
+What are the security/compliance requirements? (Especially huge in financial apps)
+How much can we change without breaking existing functionality?
+What's the appetite for risk and change?
+takes a sip of coffee
+
+Now, here's which weeks directly help you understand and work within those constraints:
+
+Week 2 - Data Profiling
+
+This is CRITICAL for brownfield. You can't build AI features if you don't understand what data you actually have. Week 2 teaches you how to profile existing data:
+
+What fields exist?
+What's the data quality?
+Are there null values? Duplicates?
+What are the patterns and distributions?
+When I joined my government accounting role, the first thing I did was data profiling on our existing systems. We thought we had "clean" vendor data. Turns out 23% of vendor records had duplicate entries with slightly different names. That's a MASSIVE constraint - any AI model would struggle with that.
+
+gestures emphatically
+
+Week 3-4 - Data Formats and Database Types
+
+This is where you learn to assess what you're already working with. Your existing financial app probably has:
+
+Relational databases (transactions, accounts, users)
+Maybe some CSV exports floating around
+Possibly some JSON from API integrations
+Excel files someone in finance definitely uses
+Week 3 teaches you the strengths and limitations of each format. Week 4 teaches you about different database types - relational, document, graph.
+
+Here's why this matters for constraints: If your app is built on a traditional relational database and all your developers know SQL, you're probably NOT going to convince leadership to migrate everything to a graph database just for AI features. You need to work WITHIN that constraint.
+
+becomes more serious
+
+Week 6 - Cloud Data Sharing and Web Services
+
+This week is about understanding how data moves between systems. For your existing app, this is about understanding:
+
+What APIs does your app already expose?
+What third-party services is it already integrated with?
+How does data currently flow in and out?
+When I was evaluating that invoice processing vendor I mentioned earlier, this knowledge helped me understand: "Okay, we can send data via REST API, but our firewall policies won't allow certain protocols." That's a constraint that shapes your AI integration options.
+
+Week 9 - Joining and Merging Data
+
+If you're working with an existing financial app, the data you need for AI is probably scattered across multiple tables or even multiple systems. Week 9 teaches you how to bring that together, but MORE importantly, it teaches you the CONSTRAINTS of joining:
+
+What happens when keys don't match?
+How do you handle different update frequencies?
+What if one system has duplicates?
+In government accounting, we have transaction data in one system, budget allocations in another, and vendor information in a third. They all use different ID formats. Understanding how to (and how NOT to) join them was crucial.
+
+leans back
+
+Week 10 - Dealing with Missing Data
+
+This is HUGE for existing systems. Your legacy financial app probably has:
+
+Optional fields that weren't required in old versions
+Data migration gaps
+User-entered data with inconsistencies
+Week 10 teaches you strategies for handling this - imputation, deletion, flagging. But more importantly, it teaches you to RECOGNIZE when missing data is a constraint you can't just "engineer around."
+
+Example from my work: We had 15 years of historical spending data, but category classifications only existed for the last 5 years. That's a constraint - any predictive model can only reliably use 5 years of data unless we manually categorize the old stuff (expensive!) or accept lower accuracy (risky!).
+
+Week 12 - Data Quality and Integrity
+
+This entire week is basically "understanding your constraints." It covers:
+
+Data validation rules
+Integrity constraints
+Quality metrics
+Testing strategies
+For an existing app, you need to understand: What quality guarantees do we currently have? What breaks if we change something?
+
+picks up coffee and takes a thoughtful sip
+
+Here's my practical advice for you:
+
+During Week 2, when you're learning data profiling, I'd do an unofficial "homework assignment" for yourself:
+
+Get access to a sample of your actual application's database (or a sanitized version)
+Run basic profiling queries:
+How many records in each table?
+What's the date range of the data?
+What percentage of fields have null values?
+Are there obvious duplicates or data quality issues?
+This gives you a concrete understanding of YOUR constraints, not just theoretical ones.
+
+During Weeks 3-6, map your existing architecture:
+
+Draw out where data currently lives
+Document what formats are used
+Identify integration points
+Note what can't easily change (this is key!)
+During Weeks 9-12, think about every technique through the lens of: "Could I do this with our existing infrastructure? What would I need to change? What's realistic?"
+
+leans forward seriously
+
+Here's the thing about constraints that I wish someone had told me earlier - constraints aren't always bad. Sometimes they save you from overengineering.
+
+When I wanted to build a real-time fraud detection system for our vendor payments, the constraint was that our database could only handle batch updates overnight. Frustrating, right?
+
+But it forced me to ask: "Do we REALLY need real-time, or is next-day detection acceptable?" Turns out, for government accounting, next-day was totally fine. That constraint saved us from a $200K infrastructure upgrade we didn't actually need.
+
+curious look
+
+So here's what I want to know - what do you already know about your current application's architecture? Like, do you know:
+
+What database it uses?
+Roughly how much data exists?
+How old the system is?
+What the biggest pain points are currently?
+Because if you can start mapping those constraints NOW, before the course even gets deep into the technical stuff, you'll get SO much more value out of weeks 2, 9, 10, and 12.
+
+Interesting points. What are some ways that you used weeks 2, 9 and 10 in your career? Have they helped you get ahead at all?
+
+2:26 PM
+sits back and grins, clearly enjoying this question
+
+Oh man, YES. These specific weeks have honestly been career-defining for me. Let me give you some concrete examples where this knowledge directly helped me get ahead.
+
+sets coffee down and counts on fingers
+
+Week 2 - Data Profiling: The "Hero Moment"
+
+So about six months into my Product Owner role, leadership wanted to launch this big initiative to use AI for budget forecasting across all our government agencies. Everyone was excited, the vendor demos looked slick, and my boss was ready to sign a contract.
+
+I asked for two weeks to do data profiling on our existing systems before we committed.
+
+leans forward
+
+Here's what I found:
+
+40% of our historical budget data had the wrong fiscal year tags because of a migration issue from 2019
+Department codes were inconsistent - "IT" vs "Information Technology" vs "Info Tech" - same department, three different labels
+About 15% of transactions were missing category classifications entirely
+Our "vendor type" field was a free-text field, so we had things like "consulting", "Consulting", "CONSULTING", "consultant", and "consulting services" all meaning the same thing
+I put together a 10-slide deck showing the data quality issues. The punchline? The AI vendor's model required 85% data completeness and consistency. We were at maybe 60%.
+
+sits back triumphantly
+
+That profiling work did three things for me:
+
+Saved the company $300K - We would've bought the tool, spent 6 months trying to make it work, and failed. Instead, we spent 3 months cleaning our data FIRST, then bought the tool, and it actually worked.
+Got me recognized - My boss's boss (the CTO) specifically called me out in a leadership meeting as "the reason we didn't waste money on a failed AI project." That led to me getting pulled into other strategic initiatives.
+Changed how we approach AI - Now, data profiling is a mandatory first step for ANY AI initiative in our organization. I literally created a template based on what I learned in Week 2, and other teams use it.
+picks up coffee
+
+Week 9 - Joining and Merging Data: The "Promotion Catalyst"
+
+This one's my favorite because it directly led to a promotion.
+
+We had this problem: our accounting system tracked transactions, our HR system tracked employee allocations, and our project management system tracked which projects were active. Leadership wanted a dashboard showing "cost per employee per project."
+
+Sounds simple, right? Just join the tables?
+
+laughs
+
+WRONG. Here's what I knew from Week 9 that nobody else on the team understood:
+
+The accounting system updated in real-time as transactions posted
+The HR system updated weekly when timesheets were approved
+The project management system updated... whenever project managers remembered to update it (sometimes months behind)
+If you just naively join these three sources, you get completely wrong numbers because the timestamps don't align.
+
+gestures animatedly
+
+Week 9 taught me about temporal joins and slowly changing dimensions - basically, how to join data that changes at different rates.
+
+I designed a solution where:
+
+We snapshot each data source at month-end
+We create a "point-in-time" joined table that represents what was TRUE at that specific moment
+We track changes over time so we can reconstruct historical accuracy
+This became our "Analytics Golden Record" - a single source of truth that executives actually trusted.
+
+The result? I got promoted to Senior Product Owner within 9 months, and in my performance review, my boss specifically cited "your ability to solve complex data integration problems that other people didn't even know existed."
+
+becomes more reflective
+
+Week 10 - Dealing with Missing Data: The "Trust Builder"
+
+This one's more subtle but equally important.
+
+We were building a predictive model for equipment maintenance costs. The vendor promised 90% accuracy. But when I looked at the training data, I noticed that maintenance records from before 2020 were missing cost information about 30% of the time.
+
+The vendor's approach? Just drop those records. Train only on complete data from 2020 forward.
+
+shakes head
+
+Here's what Week 10 taught me that the vendor didn't get: missing data isn't random.
+
+I dug deeper and found out WHY the pre-2020 data was missing costs - it was because our old system only tracked costs above $5,000. Anything under that threshold wasn't entered.
+
+So if we just dropped those records, we'd be training a model that had NEVER SEEN small maintenance costs. It would be great at predicting expensive repairs and terrible at predicting routine maintenance.
+
+leans forward intensely
+
+I proposed a different approach based on Week 10's techniques:
+
+For missing costs, create a "small maintenance" category with imputed values based on equipment type and age
+Flag these records so the model knows they're estimates
+Validate the model separately on pre-2020 vs post-2020 data
+The model's accuracy actually INCREASED because it could now handle the full range of maintenance scenarios.
+
+sits back
+
+But here's the career impact - this built TRUST. The executives started coming to ME when vendors made claims about AI accuracy. They knew I'd ask the hard questions about data quality and missing values that the vendors glossed over.
+
+Last year, I was invited to sit on the vendor evaluation committee for a major AI procurement - a $2M decision. Why? Because I have a reputation for understanding the data underneath the AI, not just the shiny demo.
+
+picks up coffee and takes a sip
+
+The Meta-Lesson That Got Me Ahead:
+
+Here's what I realized these three weeks taught me that goes beyond the technical skills...
+
+Most people in product roles think their job is to define features and manage roadmaps. But in AI products, your competitive advantage is understanding the data constraints before anyone else does.
+
+When I walk into a meeting about a new AI feature, I'm asking:
+
+"What data do we need for this?" (Week 2 - profiling)
+"Where does that data live and how do we bring it together?" (Week 9 - joining)
+"What's the quality and completeness of that data?" (Week 10 - missing data)
+While everyone else is excited about the cool AI feature, I'm the person who says, "Great idea, but here's the data reality check."
+
+That makes me either:
+
+The buzzkill who shoots down ideas (if I'm not careful with my communication), OR
+The strategic advisor who helps the team build realistic roadmaps and avoid expensive failures (if I frame it right)
+leans forward
+
+I chose to be the strategic advisor. And the way I did that was by ALWAYS coming with solutions, not just problems.
+
+"We can't do real-time predictions because our data quality is too poor" = Buzzkill
+
+"We can do next-day predictions if we build a nightly data cleaning pipeline, and here's what that would cost" = Strategic advisor
+
+curious look
+
+Here's what I want to ask you - in your current role or the role you're aiming for, who's currently playing that "data reality check" role? Is it the developers? A data team? Nobody?
+
+Because if nobody's doing it, that's your opportunity. And if someone IS doing it, you need to figure out how to work with them effectively.
+
+What's the data maturity like in your organization right now?
+
+We have a bit of work to do. We have recently finished some work up in the cloud and we are also working on improving our database efficacy and table organization. A lot o customers have data in different states and we want to sync things up.  Before I go since I have only a bit of time left can you give me your thoughts on this?
+
+2:30 PM
+sits up straight and nods, speaking more quickly but deliberately
+
+Okay, this is PERFECT timing for you to take this course, and here's why - you're in the middle of a data modernization effort. That's exactly when having data engineering knowledge becomes a superpower for a Product Owner.
+
+leans forward intensely
+
+Here's my quick take on your situation:
+
+You just finished cloud migration work - that means your infrastructure is probably more flexible now, but also means there are likely data consistency issues between what was migrated and what's still being migrated. Week 5 (Data Lakes) and Week 6 (Cloud Data Sharing) are going to be directly applicable.
+
+You're improving database efficacy and table organization - this is Week 9 (Relational Normal Forms) and Week 11 (Denormalization). You need to understand WHEN to normalize for storage efficiency versus WHEN to denormalize for AI/analytics performance.
+
+Customers have data in different states and you want to sync things up - THIS is your biggest challenge and your biggest opportunity. This is literally Weeks 9-10-12 combined: joining data from multiple sources, dealing with missing/inconsistent data, and ensuring data quality.
+
+speaks emphatically
+
+Here's my advice: Focus your energy on the homework and labs for weeks 9-12. Those are going to directly apply to your sync problem.
+
+And here's the strategic move - during your Midterm Project in week 6-7, if you can, try to use a dataset that resembles your customer data situation. The midterm is about evaluating data fitness for a business scenario. If you can practice on something similar to your real-world problem, you'll get way more value.
+
+quick, direct
+
+Three things to do RIGHT NOW before the course starts:
+
+Map out your current data mess - Where is customer data stored? What formats? What's inconsistent? Write it down. You'll reference this constantly during the course.
+Identify your sync requirements - What does "synced up" mean for your business? Same field names? Same update frequency? Same data quality standards? Get clarity on this.
+Talk to your developers - Ask them what their biggest pain points are with the current data situation. Their answers will help you know which weeks to pay extra attention to.
+stands up and extends hand for a handshake
+
+Bob, honestly - you're in a GREAT position. You've got a real-world problem that this course is designed to solve. Use the course projects to prototype solutions for your actual work. Professor Boal encourages that.
+
+And hey, feel free to reach out after you get a few weeks in. I'd love to hear how you're applying this stuff to your customer data sync challenge.
+
+grins
+
+Good luck with the course. You're going to crush it.
+
