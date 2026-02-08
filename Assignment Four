@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Jupyter Notebook",
+      "name": "jupyter"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "id": "b24d13ff-cc7e-4627-a8c8-3f56ecd2694b",
+      "metadata": {},
+      "source": "To start, I need to make sure that I can grab the approrpriate data from an HTML source. ",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "58efc369-586b-40e4-b726-3eae5037b9fa",
+      "cell_type": "code",
+      "metadata": {
+        "language": "python"
+      },
+      "source": "import pandas as pd\nimport requests",
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "5f880d61-8160-4c9e-88b2-c7349359b4ee",
+      "cell_type": "code",
+      "metadata": {
+        "language": "python"
+      },
+      "source": "url = \"https://api.open-meteo.com/v1/forecast\"\nparams = {\n    \"latitude\": [40.712776, 41.82399, 42.440498, 43.700859, 42.3656347, 40.3496953, 39.9527237, 41.3082138],\n    \"longitude\": [-74.005974, -71.412834, -76.495697, -72.289398, -71.1040018, -74.6597376, -75.1635262, -72.9250518],\n    \"daily\": \"temperature_2m_min\",\n    \"hourly\": [\"temperature_2m\", \"sunshine_duration\"],\n    \"current\": [\"precipitation\", \"snowfall\"],\n    \"timezone\": \"America/Chicago\",\n    \"wind_speed_unit\": \"mph\",\n    \"temperature_unit\": \"fahrenheit\",\n    \"precipitation_unit\": \"inch\",\n    \"start_date\": \"2026-01-01\",\n    \"end_date\": \"2026-01-31\",\n}\n\nresponse = requests.get(url, params=params)\ndata = response.json()\n\nall_hourly = []\nall_daily = []\n\nfor i, loc in enumerate(data):\n    print(f\"\\nLocation {i+1}: {loc['latitude']}°N, {loc['longitude']}°W\")\n    print(f\"Elevation: {loc['elevation']} m asl\")\n    print(f\"Timezone: {loc['timezone']} ({loc['timezone_abbreviation']})\")\n    \n    current = loc.get('current', {})\n    print(f\"Current precipitation: {current.get('precipitation')} in\")\n    print(f\"Current snowfall: {current.get('snowfall')} in\")\n    \n    hourly = loc.get('hourly', {})\n    hourly_df = pd.DataFrame({\n        'location': i+1,\n        'latitude': loc['latitude'],\n        'longitude': loc['longitude'],\n        'time': hourly.get('time', []),\n        'temperature_2m': hourly.get('temperature_2m', []),\n        'sunshine_duration': hourly.get('sunshine_duration', [])\n    })\n    all_hourly.append(hourly_df)\n    \n    daily = loc.get('daily', {})\n    daily_df = pd.DataFrame({\n        'location': i+1,\n        'latitude': loc['latitude'],\n        'longitude': loc['longitude'],\n        'date': daily.get('time', []),\n        'temperature_2m_min': daily.get('temperature_2m_min', [])\n    })\n    all_daily.append(daily_df)\n\nhourly_data = pd.concat(all_hourly, ignore_index=True)\ndaily_data = pd.concat(all_daily, ignore_index=True)\n\nprint(\"\\n--- Hourly Data Sample ---\")\nprint(hourly_data.head(10))\n\nprint(\"\\n--- Daily Data Sample ---\")\nprint(daily_data.head(10))",
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
