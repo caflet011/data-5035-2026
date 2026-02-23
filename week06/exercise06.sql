@@ -8,7 +8,7 @@ FROM DONATIONS
 WHERE DATE_OF_BIRTH < '1900-01-01';
 
 CREATE OR REPLACE TEMPORARY TABLE birth_test
-(date_of_birth VARCHAR, expected int NOT NULL);
+(date_of_birth date, expected int NOT NULL);
 
 INSERT INTO birth_test
 VALUES
@@ -25,8 +25,7 @@ SELECT
 date_of_birth AS input_value,
 CASE
     WHEN date_of_birth IS NULL THEN 1
-    WHEN TRY_TO_DATE(date_of_birth) IS NULL THEN 1
-    WHEN TRY_TO_DATE(date_of_birth) < '1900-01-01' THEN 1
+    WHEN date_of_birth < '1900-01-01' THEN 1
     ELSE 0 --situation eight, checking the dates 
 END AS actual,
 expected,
