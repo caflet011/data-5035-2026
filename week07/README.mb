@@ -1,0 +1,19 @@
+For my code it will require a dataset that includes location data and has the following columns based off the criteria: 
+ ROAD_SEGMENTS (103) - 10-mile segments with GEOGRAPHY line strings
+• TRAFFIC_COUNTS (103) - AADT with 2-12% EV share, 15-35% trucks
+• POWER_INFRA (55) - Substations (30) + transmission (25)
+• INTERCHANGES (343) - Denser near STL/Chicago/KC
+• ENV_CONSTRAINTS (17) - Wetlands and protected areas as polygons
+• WEATHER_RISK (103) - Higher risk in northern IL
+• INCIDENTS (103) - Higher crash rates in urban area
+
+Due to me not having a file with this data it is not runnable. 
+
+Assumptions: 
+For this I assumed that we would have named/labled locations. This is NOT good geolocational code since it doesn't use the lat and long and this code is also not visual at all. 
+I also assumed that the colums would have numerical data and the only column that isn't numerical would be the name/label columns. 
+
+My reflection has some of the explaination of the code but I will also put it here, and include some extra commentary: 
+For the AI version I assumed that we would need to be at a decent speed in order to slow down to 30mph and not crash or cause damage to the vehicle. For that I set the speed limit to 60mph. 
+
+Meanwhile for the SQL code I assumed that the incidents would be counted within specific ranges. Because of that, I made the incidents a random value (5). Then ontop of that I made the speed limit 70 since the previous one was 60, and after driving for a while I decided that that could be a hard but doable speed for slowing down to 30mph while in motion. 

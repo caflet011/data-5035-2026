@@ -1,0 +1,46 @@
+Thoughts: 
+Paradigm #1 - AI Method.
+For this code we will have to be very specific in what we want the application to do. Since we have specific ranges and a variety of factors I need to decide what values I want the AI to use vs letting it think for itself. 
+For the charging this requires the following: 
+Move into a dedicated lane
+Slow to 30 mph
+Attach to a guided charging cable
+Travel 10 miles (~20 minutes) while charging
+I need to tell the AI to factor in room for the following: 
+Room for a new lane. 
+A speed limit of 60 down
+10 miles of open straight road.
+
+
+Here is the prompt I used:
+ Hey Claude, can you make me code with location recommendations for the following: I need to find the locations of lanes in between ST. Louis and Chicago and St. Louis and Kansas City. These lanes need to meet the following requirements:
+* Move into a dedicated lane
+* Slow to 30 mph
+* Attach to a guided charging cable
+* Travel 10 miles (~20 minutes) while charging
+I need to tell the AI to factor in room for the following: 
+Room for a new lane. 
+A speed limit of 60 down
+10 miles of open straight road. Here is the source data was well: • ROAD_SEGMENTS (103) - 10-mile segments with GEOGRAPHY line strings
+• TRAFFIC_COUNTS (103) - AADT with 2-12% EV share, 15-35% trucks
+• POWER_INFRA (55) - Substations (30) + transmission (25)
+• INTERCHANGES (343) - Denser near STL/Chicago/KC
+• ENV_CONSTRAINTS (17) - Wetlands and protected areas as polygons
+• WEATHER_RISK (103) - Higher risk in northern IL
+• INCIDENTS (103) - Higher crash rates in urban areas
+
+After I asked it to give me a simpler answer and asked for sql or python and it gave me both. 
+
+Claude is processing and it is giving me way more than I anticipated. I should’ve been more restrictive and specific in what I wanted for it. Instead of giving me just some simple code, it gave me a complicated dashboard which is impressive, but I didn’t need all of those outputs. A list would have been better. 
+
+I chose declarative because I wanted more insight into what the AI was thinking and I wanted to see what methods it would use to help solve this issue. I also chose AI to be used because it would be a good tool to reference and to work with in order to understand what the best course of action would be. Unfortunately it gave me so much information I don’t think I’ll use it too much. 
+
+Method Two Simple SQL: 
+This code isn’t going to be workable since I don’t have the inputs. But I wanted to make some simple code that follows exact instructions. I chose SQL because like we mentioned in class it takes up a lot less code. It isn’t always the best thing in the world but for what I am doing I feel that it was useful. At the same time I lose the ability to visualize the locations and do more advanced visualization and calculations. I tried to do a simple declarative piece of code since I wanted to just see something simple. I just want to know what locations fit my requirements. I’m not looking for exact coordinates otherwise I would likely switch over to the imperative format. 
+
+For the CSV format I had claude work to create a pipeline to create the file. This was unfortunately in python. When I look at the python code the application generated it was very complicated and honestly hard to understand. It also - in a way - over engineered for the problem. I wasn't intending to get too much data out of it. I just wanted specific results and I wanted a short list for an output. For the python code vs my sql code there is substantially less work that has to be done. Not only that but if I use an oracle database I could likely get the results I want faster with my SQL query. I even had chatgpt do a sql version (the last cell in the homework assignment notebook) and it was still A LOT simpler. 
+
+Mistakes
+While working on this code I did realize a few things. I realized that for my SQL code I should've handled the data differently. I should've calculated an area where we had 10 miles of straight road. Doing so would then able me to have set locations where I could then test the weather. Using the output I could run a function to remove the locations with bad weather which would further refine my results. After doing that I could then run a fiter to check the speed limit (or I could do this second) amd after doing so I would have a great lsit of locations that meet the basic criteria for a charging station. 
+
+If I wanted to refine it more I could also attempt to add more filters like a congrestion filter. Looking back, and after writing this reflection in a sort of stream of consciousness format I would asy that python would be very helpful due to how complicated the data is and how muuch data we would have to comb thorugh. This isn't just a dataset where we are adding and finding values but it is also pulling data, transforming data and then mapping it. I think due to how complex of a process it is, if I had the time to do things over again I would spend more time trying to make a better python code by hand with a fake data set over using the AI to create the dataset for me. 
