@@ -20,5 +20,6 @@ SELECT COUNT(*) AS bad_format_results
 FROM DONATIONS
 WHERE NOT REGEXP_LIKE(PHONE, '^\\([0-9]{3}\\)-[0-9]{3}-[0-9]{4}$');
 
-/**This isnt working properly so I will have to fix this before I promote the changes.**/
+/**this was just a check for the phone numbers to evaluate the formating. 
 /**From the results this data I realized that we have an issue when we ingest our data. For the date of birth, we only collect the last two digits of the year instead of all four years. This means if we were to lose the age data, or not use it we would be unable to properly calcualte how old soneone is. Along with that, we also have missing categorical data for a few people and their organizations. It seems that, that was also the only category with null values when I compare it to my query for null values in the dataset. Another thing that I found is that the phone numbers looked incorrectly formated but I will need to do some work to create a query to investigate this, and maybe change it.**/ 
+
